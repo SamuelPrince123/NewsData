@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Information</h1>
+
+        <!-- Future Scope Form -->
+        <form id="uploadFormFutureScope" class="uploadForm">
+            <h2>11. Future Scope</h2>
+
+            <label for="titleInputFutureScope">Enter Title (optional):</label>
+            <input type="text" id="titleInputFutureScope" name="title" placeholder="Enter the title..."><br>
+            
+            <label for="dateInputFutureScope">Enter Date (optional):</label>
+            <input type="date" id="dateInputFutureScope" name="date"><br>
+            
+            <label for="headlineInputFutureScope">Enter Headline (optional):</label>
+            <input type="text" id="headlineInputFutureScope" name="headline" placeholder="Enter the headline..."><br>
+            
+            <label for="textInputFutureScope">Enter your text (max 3000 words, optional):</label>
+            <textarea id="textInputFutureScope" name="textInputFutureScope" rows="10" cols="50" maxlength="30000" placeholder="Type your future scope content here..."></textarea><br>
+            
+            <label for="imageUploadFutureScope">Upload images:</label>
+            <input type="file" id="imageUploadFutureScope" name="imageUploadFutureScope" accept="image/*" multiple><br>
+            
+            <button type="submit">Submit</button>
+            <div class="formMessage" id="formMessageFutureScope"></div>
+        </form>
+
+        <!-- Content Display for Future Scope -->
+        <div class="container">
+            <h1>Content Display - Future Scope</h1>
+            <div class="content-container" id="bhutaneseFutureScopeContentContainer">
+                <h2>Uploaded Future Scope Content</h2>
+                <!-- Future Scope content will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase scripts -->
+    <script src="scriptbf.js" type="module"></script>
+</body>
+</html>

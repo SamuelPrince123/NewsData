@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Information</h1>
+
+     <!-- Technology and Innovation Form -->
+<form id="uploadFormTech" class="uploadForm">
+    <h2>1. Technology and Innovation</h2>
+    
+    <label for="titleTech">Enter Title:</label>
+    <input type="text" id="titleTech" name="title" placeholder="Enter the title..." required><br>
+    
+    <label for="dateTech">Enter Date:</label>
+    <input type="date" id="dateTech" name="date" required><br>
+    
+    <label for="headlineTech">Enter Headline:</label>
+    <input type="text" id="headlineTech" name="headline" placeholder="Enter the headline..." required><br>
+    
+    <label for="textInputTech">Enter your text (max 3000 words):</label>
+    <textarea id="textInputTech" name="content" rows="10" cols="70" maxlength="30000" placeholder="Type your technology and innovation content here..." required></textarea><br>
+    
+    <label for="imageUploadTech">Upload an image:</label>
+    <input type="file" id="imageUploadTech" name="image" accept="image/*" required><br>
+    
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageTech"></div>
+</form>
+
+<!-- Content Display for Technology and Innovation -->
+<div class="container">
+    <h1>Content Display - Technology and Innovation</h1>
+    <div class="content-container" id="techContentContainer">
+        <h2>Uploaded Technology and Innovation Content</h2>
+        <!-- Technology and Innovation content will be dynamically added here -->
+    </div>
+</div>
+
+          
+
+ <!-- Content Display for Technology and Innovation -->
+ <div class="container">
+    <h1>Content Display - Technology and Innovation</h1>
+    <div class="content-container" id="techContentContainer">
+        <h2>Uploaded Content</h2>
+        <!-- Content for Tech will be added here dynamically -->
+    </div>
+</div>
+<!-- World Crises Form -->
+<form id="uploadFormCrises" class="uploadForm">
+    <h2>2. World Crises</h2>
+
+    <label for="titleInputCrises">Enter Title:</label>
+    <input type="text" id="titleInputCrises" name="titleInputCrises" placeholder="Enter the title..." required><br>
+
+    <label for="dateInputCrises">Enter Date:</label>
+    <input type="date" id="dateInputCrises" name="dateInputCrises" required><br>
+
+    <label for="headlineInputCrises">Enter Headline:</label>
+    <input type="text" id="headlineInputCrises" name="headlineInputCrises" placeholder="Enter the headline..." required><br>
+
+    <label for="textInputCrises">Enter your text (max 1000 words):</label>
+    <textarea id="textInputCrises" name="textInputCrises" rows="10" cols="70" maxlength="10000" placeholder="Type your text here..." required></textarea><br>
+
+    <label for="imageUploadCrises">Upload an image:</label>
+    <input type="file" id="imageUploadCrises" name="imageUploadCrises" accept="image/*" required><br>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageCrises"></div>
+</form>
+
+<!-- Content Display for World Crises -->
+<div class="container">
+    <h1>Content Display - World Crises</h1>
+    <div class="content-container" id="crisesContentContainer">
+        <h2>Uploaded Content</h2>
+        <!-- Content for Crises will be added here dynamically -->
+    </div>
+</div>
+
+
+<!-- Sports Form -->
+<form id="uploadFormSports" class="uploadForm">
+    <h2>3. Sports</h2>
+    
+    <label for="titleInputSports">Enter Title:</label>
+    <input type="text" id="titleInputSports" name="titleInputSports" placeholder="Enter the title..." required><br>
+
+    <label for="dateInputSports">Enter Date:</label>
+    <input type="date" id="dateInputSports" name="dateInputSports" required><br>
+
+    <label for="headlineInputSports">Enter Headline:</label>
+    <input type="text" id="headlineInputSports" name="headlineInputSports" placeholder="Enter the headline..." required><br>
+
+    <label for="textInputSports">Enter your text (max 700 words):</label>
+    <textarea id="textInputSports" name="textInputSports" rows="10" cols="70" maxlength="7000" placeholder="Type your sports content here..." required></textarea><br>
+
+    <label for="imageUploadSports">Upload an image:</label>
+    <input type="file" id="imageUploadSports" name="imageUploadSports" accept="image/*" required><br>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageSports"></div>
+</form>
+
+<!-- Content Display for Sports -->
+<div class="container">
+    <h1>Content Display - Sports</h1>
+    <div class="content-container" id="sportsContentContainer">
+        <h2>Uploaded Sports Content</h2>
+        <!-- Sports content will be dynamically added here -->
+    </div>
+</div>
+
+
+
+<!-- Entertainment and Celebrity News Form -->
+<form id="uploadFormEntertainment" class="uploadForm">
+    <h2>4. Entertainment and Celebrity News</h2>
+    
+    <label for="titleInputEntertainment">Enter Title:</label>
+    <input type="text" id="titleInputEntertainment" name="titleInputEntertainment" placeholder="Enter the title..." required><br>
+
+    <label for="dateInputEntertainment">Enter Date:</label>
+    <input type="date" id="dateInputEntertainment" name="dateInputEntertainment" required><br>
+
+    <label for="headlineInputEntertainment">Enter Headline:</label>
+    <input type="text" id="headlineInputEntertainment" name="headlineInputEntertainment" placeholder="Enter the headline..." required><br>
+
+    <label for="textInputEntertainment">Enter your text (max 800 words):</label>
+    <textarea id="textInputEntertainment" name="textInputEntertainment" rows="10" cols="70" maxlength="8000" placeholder="Type your entertainment content here..." required></textarea><br>
+
+    <label for="imageUploadEntertainment">Upload an image:</label>
+    <input type="file" id="imageUploadEntertainment" name="imageUploadEntertainment" accept="image/*" required><br>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageEntertainment"></div>
+</form>
+
+<!-- Content Display for Entertainment and Celebrity News -->
+<div class="container">
+    <h1>Content Display - Entertainment and Celebrity News</h1>
+    <div class="content-container" id="entertainmentContentContainer">
+        <h2>Uploaded Entertainment Content</h2>
+        <!-- Entertainment content will be dynamically added here -->
+    </div>
+</div>
+
+<!-- Crime and Law Form -->
+<form id="uploadFormCrimeLaw" class="uploadForm">
+    <h2>5. Crime and Law</h2>
+    
+    <label for="titleInputCrimeLaw">Enter Title:</label>
+    <input type="text" id="titleInputCrimeLaw" name="titleInputCrimeLaw" placeholder="Enter the title..." required><br>
+
+    <label for="dateInputCrimeLaw">Enter Date:</label>
+    <input type="date" id="dateInputCrimeLaw" name="dateInputCrimeLaw" required><br>
+
+    <label for="headlineInputCrimeLaw">Enter Headline:</label>
+    <input type="text" id="headlineInputCrimeLaw" name="headlineInputCrimeLaw" placeholder="Enter the headline..." required><br>
+
+    <label for="textInputCrimeLaw">Enter your text (max 3000 words):</label>
+    <textarea id="textInputCrimeLaw" name="textInputCrimeLaw" rows="10" cols="70" maxlength="30000" placeholder="Type your crime and law content here..." required></textarea><br>
+
+    <label for="imageUploadCrimeLaw">Upload an image:</label>
+    <input type="file" id="imageUploadCrimeLaw" name="imageUploadCrimeLaw" accept="image/*" required><br>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageCrimeLaw"></div>
+</form>
+
+<!-- Content Display for Crime and Law -->
+<div class="container">
+    <h1>Content Display - Crime and Law</h1>
+    <div class="content-container" id="crimeLawContentContainer">
+        <h2>Uploaded Crime and Law Content</h2>
+        <!-- Crime and Law content will be dynamically added here -->
+    </div>
+</div>
+
+
+<!-- Social Issues and Movement Form -->
+<form id="uploadFormSocialIssues" class="uploadForm">
+    <h2>6. Social Issues and Movement</h2>
+    
+    <label for="titleInputSocialIssues">Enter Title:</label>
+    <input type="text" id="titleInputSocialIssues" name="titleInputSocialIssues" placeholder="Enter the title..." required><br>
+
+    <label for="dateInputSocialIssues">Enter Date:</label>
+    <input type="date" id="dateInputSocialIssues" name="dateInputSocialIssues" required><br>
+
+    <label for="headlineInputSocialIssues">Enter Headline:</label>
+    <input type="text" id="headlineInputSocialIssues" name="headlineInputSocialIssues" placeholder="Enter the headline..." required><br>
+
+    <label for="textInputSocialIssues">Enter your text (max 3000 words):</label>
+    <textarea id="textInputSocialIssues" name="textInputSocialIssues" rows="10" cols="70" maxlength="30000" placeholder="Type your social issues and movement content here..." required></textarea><br>
+
+    <label for="imageUploadSocialIssues">Upload an image:</label>
+    <input type="file" id="imageUploadSocialIssues" name="imageUploadSocialIssues" accept="image/*" required><br>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageSocialIssues"></div>
+</form>
+
+<!-- Content Display for Social Issues and Movement -->
+<div class="container">
+    <h1>Content Display - Social Issues and Movement</h1>
+    <div class="content-container" id="socialIssuesContentContainer">
+        <h2>Uploaded Social Issues and Movement Content</h2>
+        <!-- Social Issues and Movement content will be dynamically added here -->
+    </div>
+</div>
+
+<!-- Archaeology and History Form -->
+<form id="uploadFormArchaeology" class="uploadForm">
+    <h2>7. Archaeology and History</h2>
+    
+    <label for="titleInputArchaeology">Enter Title:</label>
+    <input type="text" id="titleInputArchaeology" name="titleInputArchaeology" placeholder="Enter the title..." required><br>
+
+    <label for="dateInputArchaeology">Enter Date:</label>
+    <input type="date" id="dateInputArchaeology" name="dateInputArchaeology" required><br>
+
+    <label for="headlineInputArchaeology">Enter Headline:</label>
+    <input type="text" id="headlineInputArchaeology" name="headlineInputArchaeology" placeholder="Enter the headline..." required><br>
+
+    <label for="textInputArchaeology">Enter your text (max 3000 words):</label>
+    <textarea id="textInputArchaeology" name="textInputArchaeology" rows="10" cols="70" maxlength="30000" placeholder="Type your archaeology and history content here..." required></textarea><br>
+
+    <label for="imageUploadArchaeology">Upload an image:</label>
+    <input type="file" id="imageUploadArchaeology" name="imageUploadArchaeology" accept="image/*" required><br>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageArchaeology"></div>
+</form>
+
+<!-- Content Display for Archaeology and History -->
+<div class="container">
+    <h1>Content Display - Archaeology and History</h1>
+    <div class="content-container" id="archaeologyContentContainer">
+        <h2>Uploaded Archaeology and History Content</h2>
+        <!-- Archaeology and History content will be dynamically added here -->
+    </div>
+</div>
+
+<!-- Wellness and Health Form -->
+<form id="uploadFormWellness" class="uploadForm">
+    <h2>8. Wellness and Health</h2>
+    
+    <label for="titleInputWellness">Enter Title:</label>
+    <input type="text" id="titleInputWellness" name="titleInputWellness" placeholder="Enter the title..." required><br>
+
+    <label for="dateInputWellness">Enter Date:</label>
+    <input type="date" id="dateInputWellness" name="dateInputWellness" required><br>
+
+    <label for="headlineInputWellness">Enter Headline:</label>
+    <input type="text" id="headlineInputWellness" name="headlineInputWellness" placeholder="Enter the headline..." required><br>
+
+    <label for="textInputWellness">Enter your text (max 3000 words):</label>
+    <textarea id="textInputWellness" name="textInputWellness" rows="10" cols="70" maxlength="30000" placeholder="Type your wellness and health content here..." required></textarea><br>
+
+    <label for="imageUploadWellness">Upload an image:</label>
+    <input type="file" id="imageUploadWellness" name="imageUploadWellness" accept="image/*" required><br>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageWellness"></div>
+</form>
+
+<!-- Content Display for Wellness and Health -->
+<div class="container">
+    <h1>Content Display - Wellness and Health</h1>
+    <div class="content-container" id="wellnessContentContainer">
+        <h2>Uploaded Wellness and Health Content</h2>
+        <!-- Wellness and Health content will be dynamically added here -->
+    </div>
+</div>
+
+<!-- Finance and Business Form -->
+<form id="uploadFormFinance" class="uploadForm">
+    <h2>9. Finance and Business</h2>
+    
+    <label for="titleInputFinance">Enter Title:</label>
+    <input type="text" id="titleInputFinance" name="titleInputFinance" placeholder="Enter the title..." required><br>
+
+    <label for="dateInputFinance">Enter Date:</label>
+    <input type="date" id="dateInputFinance" name="dateInputFinance" required><br>
+
+    <label for="headlineInputFinance">Enter Headline:</label>
+    <input type="text" id="headlineInputFinance" name="headlineInputFinance" placeholder="Enter the headline..." required><br>
+
+    <label for="textInputFinance">Enter your text (max 3000 words):</label>
+    <textarea id="textInputFinance" name="textInputFinance" rows="10" cols="70" maxlength="30000" placeholder="Type your finance and business content here..." required></textarea><br>
+
+    <label for="imageUploadFinance">Upload an image:</label>
+    <input type="file" id="imageUploadFinance" name="imageUploadFinance" accept="image/*" required><br>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageFinance"></div>
+</form>
+
+<!-- Content Display for Finance and Business -->
+<div class="container">
+    <h1>Content Display - Finance and Business</h1>
+    <div class="content-container" id="financeContentContainer">
+        <h2>Uploaded Finance and Business Content</h2>
+        <!-- Finance and Business content will be dynamically added here -->
+    </div>
+</div>
+
+
+<!-- Environment and Climate Form -->
+<form id="uploadFormEnvironment" class="uploadForm">
+    <h2>10. Environment and Climate</h2>
+    
+    <label for="titleInputEnvironment">Enter Title:</label>
+    <input type="text" id="titleInputEnvironment" name="titleInputEnvironment" placeholder="Enter the title..." required><br>
+
+    <label for="dateInputEnvironment">Enter Date:</label>
+    <input type="date" id="dateInputEnvironment" name="dateInputEnvironment" required><br>
+
+    <label for="headlineInputEnvironment">Enter Headline:</label>
+    <input type="text" id="headlineInputEnvironment" name="headlineInputEnvironment" placeholder="Enter the headline..." required><br>
+
+    <label for="textInputEnvironment">Enter your text (max 3000 words):</label>
+    <textarea id="textInputEnvironment" name="textInputEnvironment" rows="10" cols="70" maxlength="30000" placeholder="Type your environment and climate content here..." required></textarea><br>
+
+    <label for="imageUploadEnvironment">Upload an image:</label>
+    <input type="file" id="imageUploadEnvironment" name="imageUploadEnvironment" accept="image/*" required><br>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageEnvironment"></div>
+</form>
+
+<!-- Content Display for Environment and Climate -->
+<div class="container">
+    <h1>Content Display - Environment and Climate</h1>
+    <div class="content-container" id="environmentContentContainer">
+        <h2>Uploaded Environment and Climate Content</h2>
+        <!-- Environment and Climate content will be dynamically added here -->
+    </div>
+</div>
+
+
+<!-- Education and Learning Form -->
+<form id="uploadFormEducationLearning" class="uploadForm">
+    <h2>11. Education and Learning</h2>
+    
+    <label for="titleInputEducationLearning">Enter Title:</label>
+    <input type="text" id="titleInputEducationLearning" name="titleInputEducationLearning" placeholder="Enter the title..." required><br>
+
+    <label for="dateInputEducationLearning">Enter Date:</label>
+    <input type="date" id="dateInputEducationLearning" name="dateInputEducationLearning" required><br>
+
+    <label for="headlineInputEducationLearning">Enter Headline:</label>
+    <input type="text" id="headlineInputEducationLearning" name="headlineInputEducationLearning" placeholder="Enter the headline..." required><br>
+
+    <label for="textInputEducationLearning">Enter your text (max 3000 words):</label>
+    <textarea id="textInputEducationLearning" name="textInputEducationLearning" rows="10" cols="70" maxlength="30000" placeholder="Type your education and learning content here..." required></textarea><br>
+
+    <label for="imageUploadEducationLearning">Upload an image:</label>
+    <input type="file" id="imageUploadEducationLearning" name="imageUploadEducationLearning" accept="image/*" required><br>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageEducationLearning"></div>
+</form>
+
+<!-- Content Display for Education and Learning -->
+<div class="container">
+    <h1>Content Display - Education and Learning</h1>
+    <div class="content-container" id="educationLearningContentContainer">
+        <h2>Uploaded Education and Learning Content</h2>
+        <!-- Education and Learning content will be dynamically added here -->
+    </div>
+</div>
+
+
+</div>
+
+<!-- Firebase scripts -->
+<script src="scriptw.js" type="module"></script>
+<script src="scriptw2.js" type="module"></script>
+<script src="scriptw3.js" type="module"></script>
+
+
+
+
+   
+
+       
+</body>
+</html>
+

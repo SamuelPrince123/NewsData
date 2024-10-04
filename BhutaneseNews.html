@@ -1,0 +1,59 @@
+ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Information</h1>
+
+<!-- Bhutanese News Form -->
+<form id="uploadFormBhutaneseNews" class="uploadForm">
+    <h2>12. Bhutanese News</h2>
+    
+    <label for="titleInputBhutaneseNews">Enter Title:</label>
+    <input type="text" id="titleInputBhutaneseNews" name="titleInputBhutaneseNews" placeholder="Enter the title..." required><br>
+
+    <label for="dateInputBhutaneseNews">Enter Date:</label>
+    <input type="date" id="dateInputBhutaneseNews" name="dateInputBhutaneseNews" required><br>
+
+    <label for="headlineInputBhutaneseNews">Enter Headline:</label>
+    <input type="text" id="headlineInputBhutaneseNews" name="headlineInputBhutaneseNews" placeholder="Enter the headline..." required><br>
+
+    <label for="textInputBhutaneseNews">Enter your text (max 3000 words):</label>
+    <textarea id="textInputBhutaneseNews" name="textInputBhutaneseNews" rows="10" cols="70" maxlength="30000" placeholder="Type your Bhutanese news content here..." required></textarea><br>
+
+    <label for="imageUploadBhutaneseNews">Upload an image:</label>
+    <input type="file" id="imageUploadBhutaneseNews" name="imageUploadBhutaneseNews" accept="image/*" required><br>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageBhutaneseNews"></div>
+</form>
+
+<!-- Content Display for Bhutanese News -->
+<div class="container">
+    <h1>Content Display - Bhutanese News</h1>
+    <div class="content-container" id="bhutaneseNewsContentContainer">
+        <h2>Uploaded Bhutanese News Content</h2>
+        <!-- Bhutanese News content will be dynamically added here -->
+    </div>
+</div>
+
+
+</div>
+
+<!-- Firebase scripts -->
+<script src="scriptb.js" type="module"></script>
+
+
+   
+
+       
+</body>
+</html>
