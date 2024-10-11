@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Information</h1>
+
+        <!-- Future Scope Form -->
+        <form id="uploadFormWorldsFutureScope" class="uploadForm">
+            <h2>Worlds Future Scope</h2>
+
+            <label for="titleInputWorldsFutureScope">Enter Title (optional):</label>
+            <input type="text" id="titleInputWorldsFutureScope" name="title" placeholder="Enter the title..."><br>
+            
+            <label for="dateInputWorldsFutureScope">Enter Date (optional):</label>
+            <input type="date" id="dateInputWorldsFutureScope" name="date"><br>
+            
+            <label for="headlineInputWorldsFutureScope">Enter Headline (optional):</label>
+            <input type="text" id="headlineInputWorldsFutureScope" name="headline" placeholder="Enter the headline..."><br>
+            
+            <label for="textInputWorldsFutureScope">Enter your text (max 3000 words, optional):</label>
+            <textarea id="textInputWorldsFutureScope" name="textInputWorldsFutureScope" rows="10" cols="50" maxlength="30000" placeholder="Type your future scope content here..."></textarea><br>
+            
+            <label for="imageUploadWorldsFutureScope">Upload images:</label>
+            <input type="file" id="imageUploadWorldsFutureScope" name="imageUploadWorldsFutureScope" accept="image/*" multiple><br>
+            
+            <button type="submit">Submit</button>
+            <div class="formMessage" id="formMessageFutureScope"></div>
+        </form>
+
+        <!-- Content Display for Future Scope -->
+        <div class="container">
+            <h1>Content Display - Future Scope</h1>
+            <div class="content-container" id="worldsFutureScopeContentContainer">
+                <h2>Uploaded Future Scope Content</h2>
+                <!-- Future Scope content will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase scripts -->
+    <script src="scriptwf.js" type="module"></script>
+</body>
+</html>

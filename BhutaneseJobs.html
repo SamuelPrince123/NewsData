@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Information</h1>
+
+        <!-- Bhutanese Jobs Form -->
+        <form id="uploadFormBhutaneseJobs" class="uploadForm">
+            <h2>13. Bhutanese Jobs</h2>
+
+            <label for="titleInputBhutaneseJobs">Enter Title:</label>
+            <input type="text" id="titleInputBhutaneseJobs" name="title" placeholder="Enter the title..."><br>
+            
+            <label for="dateInputBhutaneseJobs">Enter Date:</label>
+            <input type="date" id="dateInputBhutaneseJobs" name="date"><br>
+            
+            <label for="headlineInputBhutaneseJobs">Enter Headline:</label>
+            <input type="text" id="headlineInputBhutaneseJobs" name="headline" placeholder="Enter the headline..."><br>
+            
+            <label for="textInputBhutaneseJobs">Enter your text (max 3000 words):</label>
+            <textarea id="textInputBhutaneseJobs" name="textInputBhutaneseJobs" rows="10" cols="50" maxlength="30000" placeholder="Type your Bhutanese jobs content here..."></textarea><br>
+            
+            <label for="imageUploadBhutaneseJobs">Upload images:</label>
+            <input type="file" id="imageUploadBhutaneseJobs" name="imageUploadBhutaneseJobs" accept="image/*" multiple><br>
+            
+            <button type="submit">Submit</button>
+            <div class="formMessage" id="formMessageBhutaneseJobs"></div>
+        </form>
+
+        <!-- Content Display for Bhutanese Jobs -->
+        <div class="container">
+            <h1>Content Display - Bhutanese Jobs</h1>
+            <div class="content-container" id="bhutaneseJobsContentContainer">
+                <h2>Uploaded Bhutanese Jobs Content</h2>
+                <!-- Bhutanese Jobs content will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase scripts -->
+    <script src="scriptj.js" type="module"></script>
+</body>
+</html>

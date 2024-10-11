@@ -1,0 +1,586 @@
+ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Information</h1>
+
+        <!-- Technology and Innovation Form -->
+ <form id="uploadFormTech" class="uploadForm">
+    <h2>1. Technology and Innovation</h2>
+    <label for="textInputTech">Enter your text (max 500 words):</label>
+    <textarea id="textInputTech" name="textInputTech" rows="10" cols="50" maxlength="5000" placeholder="Type your text here..." required></textarea>
+
+    <label for="imageUploadTech">Upload an image:</label>
+    <input type="file" id="imageUploadTech" name="imageUploadTech" accept="image/*" required>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageTech"></div>
+</form>
+
+ <!-- Content Display for Technology and Innovation -->
+ <div class="container">
+    <h1>Content Display - Technology and Innovation</h1>
+    <div class="content-container" id="techContentContainer">
+        <h2>Uploaded Content</h2>
+        <!-- Content for Tech will be added here dynamically -->
+    </div>
+</div>
+
+<!-- World Crises Form -->
+<form id="uploadFormCrises" class="uploadForm">
+    <h2>2. World Crises</h2>
+    <label for="textInputCrises">Enter your text (max 1000 words):</label>
+    <textarea id="textInputCrises" name="textInputCrises" rows="10" cols="50" maxlength="10000" placeholder="Type your text here..." required></textarea>
+
+    <label for="imageUploadCrises">Upload an image:</label>
+    <input type="file" id="imageUploadCrises" name="imageUploadCrises" accept="image/*" required>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageCrises"></div>
+</form>
+
+
+
+<!-- Content Display for World Crises -->
+<div class="container">
+    <h1>Content Display - World Crises</h1>
+    <div class="content-container" id="crisesContentContainer">
+        <h2>Uploaded Content</h2>
+        <!-- Content for Crises will be added here dynamically -->
+    </div>
+</div>
+
+<!-- Sports Form -->
+<form id="uploadFormSports" class="uploadForm">
+    <h2>3. Sports</h2>
+    <label for="textInputSports">Enter your text (max 700 words):</label>
+    <textarea id="textInputSports" name="textInputSports" rows="10" cols="50" maxlength="7000" placeholder="Type your sports content here..." required></textarea>
+
+    <label for="imageUploadSports">Upload an image:</label>
+    <input type="file" id="imageUploadSports" name="imageUploadSports" accept="image/*" required>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageSports"></div>
+</form>
+
+<!-- Content Display for Sports -->
+<div class="container">
+    <h1>Content Display - Sports</h1>
+    <div class="content-container" id="sportsContentContainer">
+        <h2>Uploaded Sports Content</h2>
+        <!-- Sports content will be dynamically added here -->
+    </div>
+</div>
+
+
+<!-- Entertainment and Celebrity News Form -->
+<form id="uploadFormEntertainment" class="uploadForm">
+    <h2>4. Entertainment and Celebrity News</h2>
+    <label for="textInputEntertainment">Enter your text (max 800 words):</label>
+    <textarea id="textInputEntertainment" name="textInputEntertainment" rows="10" cols="50" maxlength="8000" placeholder="Type your entertainment content here..." required></textarea>
+
+    <label for="imageUploadEntertainment">Upload an image:</label>
+    <input type="file" id="imageUploadEntertainment" name="imageUploadEntertainment" accept="image/*" required>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageEntertainment"></div>
+</form>
+
+<!-- Content Display for Entertainment and Celebrity News -->
+<div class="container">
+    <h1>Content Display - Entertainment and Celebrity News</h1>
+    <div class="content-container" id="entertainmentContentContainer">
+        <h2>Uploaded Entertainment Content</h2>
+        <!-- Entertainment content will be dynamically added here -->
+    </div>
+</div>
+
+
+
+<!-- Health and Wellness Form -->
+<form id="uploadFormHealth" class="uploadForm">
+    <h2>4. Health and Wellness</h2>
+    <label for="textInputHealth">Enter your text (max 3000+ words):</label>
+    <textarea id="textInputHealth" name="textInputHealth" rows="15" cols="50" maxlength="30000" placeholder="Type your health and wellness content here..." required></textarea>
+
+    <label for="imageUploadHealth">Upload an image:</label>
+    <input type="file" id="imageUploadHealth" name="imageUploadHealth" accept="image/*" required>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageHealth"></div>
+</form>
+
+<!-- Content Display for Health and Wellness -->
+<div class="container">
+    <h1>Content Display - Health and Wellness</h1>
+    <div class="content-container" id="healthContentContainer">
+        <h2>Uploaded Health and Wellness Content</h2>
+        <!-- Health and Wellness content will be dynamically added here -->
+    </div>
+</div>
+
+
+<!-- Business and Finance Form -->
+<form id="uploadFormBusiness" class="uploadForm">
+    <h2>5. Business and Finance</h2>
+    <label for="textInputBusiness">Enter your text (max 3000 words):</label>
+    <textarea id="textInputBusiness" name="textInputBusiness" rows="10" cols="50" maxlength="30000" placeholder="Type your business and finance content here..." required></textarea>
+
+    <label for="imageUploadBusiness">Upload an image:</label>
+    <input type="file" id="imageUploadBusiness" name="imageUploadBusiness" accept="image/*" required>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageBusiness"></div>
+</form>
+
+
+<!-- Content Display for Business and Finance -->
+<div class="container">
+    <h1>Content Display - Business and Finance</h1>
+    <div class="content-container" id="businessContentContainer">
+        <h2>Uploaded Business and Finance Content</h2>
+        <!-- Business and Finance content will be dynamically added here -->
+    </div>
+</div>
+
+
+<!-- Climate and Environment Form -->
+<form id="uploadFormClimate" class="uploadForm">
+    <h2>6. Climate and Environment</h2>
+    <label for="textInputClimate">Enter your text (max 3000 words):</label>
+    <textarea id="textInputClimate" name="textInputClimate" rows="10" cols="50" maxlength="30000" placeholder="Type your climate and environment content here..." required></textarea>
+
+    <label for="imageUploadClimate">Upload an image:</label>
+    <input type="file" id="imageUploadClimate" name="imageUploadClimate" accept="image/*" required>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageClimate"></div>
+</form>
+
+<!-- Content Display for Climate and Environment -->
+<div class="container">
+    <h1>Content Display - Climate and Environment</h1>
+    <div class="content-container" id="climateContentContainer">
+        <h2>Uploaded Climate and Environment Content</h2>
+        <!-- Climate and Environment content will be dynamically added here -->
+    </div>
+</div>
+
+<!-- Education and Learning Form -->
+<form id="uploadFormEducation" class="uploadForm">
+    <h2>7. Education and Learning</h2>
+    <label for="textInputEducation">Enter your text (max 3000 words):</label>
+    <textarea id="textInputEducation" name="textInputEducation" rows="10" cols="50" maxlength="30000" placeholder="Type your education and learning content here..." required></textarea>
+
+    <label for="imageUploadEducation">Upload an image:</label>
+    <input type="file" id="imageUploadEducation" name="imageUploadEducation" accept="image/*" required>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageEducation"></div>
+</form>
+
+<!-- Content Display for Education and Learning -->
+<div class="container">
+    <h1>Content Display - Education and Learning</h1>
+    <div class="content-container" id="educationContentContainer">
+        <h2>Uploaded Education and Learning Content</h2>
+        <!-- Education and Learning content will be dynamically added here -->
+    </div>
+</div>
+
+
+<!-- Crime and Law Form -->
+<form id="uploadFormCrimeLaw" class="uploadForm">
+    <h2>8. Crime and Law</h2>
+    <label for="textInputCrimeLaw">Enter your text (max 3000 words):</label>
+    <textarea id="textInputCrimeLaw" name="textInputCrimeLaw" rows="10" cols="50" maxlength="30000" placeholder="Type your crime and law content here..." required></textarea>
+
+    <label for="imageUploadCrimeLaw">Upload an image:</label>
+    <input type="file" id="imageUploadCrimeLaw" name="imageUploadCrimeLaw" accept="image/*" required>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageCrimeLaw"></div>
+</form>
+
+<!-- Content Display for Crime and Law -->
+<div class="container">
+    <h1>Content Display - Crime and Law</h1>
+    <div class="content-container" id="crimeLawContentContainer">
+        <h2>Uploaded Crime and Law Content</h2>
+        <!-- Crime and Law content will be dynamically added here -->
+    </div>
+</div>
+
+<!-- Social Issues and Movement Form -->
+<form id="uploadFormSocialIssues" class="uploadForm">
+    <h2>10. Social Issues and Movement</h2>
+    <label for="textInputSocialIssues">Enter your text (max 3000 words):</label>
+    <textarea id="textInputSocialIssues" name="textInputSocialIssues" rows="10" cols="50" maxlength="30000" placeholder="Type your social issues and movement content here..." required></textarea>
+
+    <label for="imageUploadSocialIssues">Upload an image:</label>
+    <input type="file" id="imageUploadSocialIssues" name="imageUploadSocialIssues" accept="image/*" required>
+
+    <button type="submit">Submit</button>
+    <div class="formMessage" id="formMessageSocialIssues"></div>
+</form>
+
+<!-- Content Display for Social Issues and Movement -->
+<div class="container">
+    <h1>Content Display - Social Issues and Movement</h1>
+    <div class="content-container" id="socialIssuesContentContainer">
+        <h2>Uploaded Social Issues and Movement Content</h2>
+        <!-- Social Issues and Movement content will be dynamically added here -->
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+
+<!-- Firebase scripts -->
+<script src="script.js" type="module"></script>
+
+
+   
+
+       
+</body>
+</html>
+
+
+
+
+// Entertainment and Celebrity News Submission
+document
+  .getElementById("uploadFormEntertainment")
+  .addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const textInputElement = document.getElementById(
+      "textInputEntertainment"
+    );
+    const imageUploadElement = document.getElementById(
+      "imageUploadEntertainment"
+    );
+    const formMessage = document.getElementById("formMessageEntertainment");
+
+    const textInput = textInputElement.value;
+    const imageUpload = imageUploadElement.files[0];
+
+    if (textInput.split(/\s+/).length > 800) {
+      // Customize word limit for entertainment section
+      formMessage.innerText = "Your text exceeds the 800-word limit.";
+      return;
+    }
+
+    try {
+      const imageRef = ref(
+        storage,
+        `images/${Date.now()}_${imageUpload.name}`
+      );
+      await uploadBytes(imageRef, imageUpload);
+      const imageUrl = await getDownloadURL(imageRef);
+      await addDoc(collection(firestore, "entertainment"), {
+        // Save to "entertainment" collection
+        text: textInput,
+        imageUrl: imageUrl,
+        timestamp: new Date(),
+      });
+      formMessage.innerText = "Form submitted successfully!";
+      document.getElementById("uploadFormEntertainment").reset();
+      addContent(textInput, imageUrl, "entertainmentContentContainer");
+    } catch (error) {
+      formMessage.innerText = "Error uploading content. Please try again.";
+      console.error(error);
+    }
+  });
+
+// Health and Wellness Submission
+document
+  .getElementById("uploadFormHealth")
+  .addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const textInputElement = document.getElementById("textInputHealth");
+    const imageUploadElement = document.getElementById("imageUploadHealth");
+    const formMessage = document.getElementById("formMessageHealth");
+
+    const textInput = textInputElement.value;
+    const imageUpload = imageUploadElement.files[0];
+
+    // No strict word limit as per the new requirement
+    if (textInput.split(/\s+/).length > 3000) {
+      formMessage.innerText = "Your text exceeds the 3000-word limit.";
+      return;
+    }
+
+    try {
+      const imageRef = ref(
+        storage,
+        `images/${Date.now()}_${imageUpload.name}`
+      );
+      await uploadBytes(imageRef, imageUpload);
+      const imageUrl = await getDownloadURL(imageRef);
+      await addDoc(collection(firestore, "health"), {
+        text: textInput,
+        imageUrl: imageUrl,
+        timestamp: new Date(),
+      });
+      formMessage.innerText = "Form submitted successfully!";
+      document.getElementById("uploadFormHealth").reset();
+      addContent(textInput, imageUrl, "healthContentContainer");
+    } catch (error) {
+      formMessage.innerText = "Error uploading content. Please try again.";
+      console.error(error);
+    }
+  });
+
+// Business and Finance Submission
+document
+  .getElementById("uploadFormBusiness")
+  .addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const textInputElement = document.getElementById("textInputBusiness");
+    const imageUploadElement = document.getElementById("imageUploadBusiness");
+    const formMessage = document.getElementById("formMessageBusiness");
+
+    const textInput = textInputElement.value;
+    const imageUpload = imageUploadElement.files[0];
+
+    if (textInput.split(/\s+/).length > 3000) {
+      // Adjust word limit here
+      formMessage.innerText = "Your text exceeds the 3000-word limit.";
+      return;
+    }
+
+    try {
+      const imageRef = ref(
+        storage,
+        `images/${Date.now()}_${imageUpload.name}`
+      );
+      await uploadBytes(imageRef, imageUpload);
+      const imageUrl = await getDownloadURL(imageRef);
+      await addDoc(collection(firestore, "business"), {
+        text: textInput,
+        imageUrl: imageUrl,
+        timestamp: new Date(),
+      });
+      formMessage.innerText = "Form submitted successfully!";
+      document.getElementById("uploadFormBusiness").reset();
+      addContent(textInput, imageUrl, "businessContentContainer");
+    } catch (error) {
+      formMessage.innerText = "Error uploading content. Please try again.";
+      console.error(error);
+    }
+  });
+
+// Climate and Environment Submission
+document
+  .getElementById("uploadFormClimate")
+  .addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const textInputElement = document.getElementById("textInputClimate");
+    const imageUploadElement = document.getElementById("imageUploadClimate");
+    const formMessage = document.getElementById("formMessageClimate");
+
+    const textInput = textInputElement.value;
+    const imageUpload = imageUploadElement.files[0];
+
+    if (textInput.split(/\s+/).length > 3000) {
+      // Adjust word limit here
+      formMessage.innerText = "Your text exceeds the 3000-word limit.";
+      return;
+    }
+
+    try {
+      const imageRef = ref(
+        storage,
+        `images/${Date.now()}_${imageUpload.name}`
+      );
+      await uploadBytes(imageRef, imageUpload);
+      const imageUrl = await getDownloadURL(imageRef);
+      await addDoc(collection(firestore, "climate"), {
+        text: textInput,
+        imageUrl: imageUrl,
+        timestamp: new Date(),
+      });
+      formMessage.innerText = "Form submitted successfully!";
+      document.getElementById("uploadFormClimate").reset();
+      addContent(textInput, imageUrl, "climateContentContainer");
+    } catch (error) {
+      formMessage.innerText = "Error uploading content. Please try again.";
+      console.error(error);
+    }
+  });
+
+// Education and Learning Submission
+document
+  .getElementById("uploadFormEducation")
+  .addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const textInputElement = document.getElementById("textInputEducation");
+    const imageUploadElement = document.getElementById(
+      "imageUploadEducation"
+    );
+    const formMessage = document.getElementById("formMessageEducation");
+
+    const textInput = textInputElement.value;
+    const imageUpload = imageUploadElement.files[0];
+
+    if (textInput.split(/\s+/).length > 3000) {
+      // Adjust word limit here
+      formMessage.innerText = "Your text exceeds the 3000-word limit.";
+      return;
+    }
+
+    try {
+      const imageRef = ref(
+        storage,
+        `images/${Date.now()}_${imageUpload.name}`
+      );
+      await uploadBytes(imageRef, imageUpload);
+      const imageUrl = await getDownloadURL(imageRef);
+      await addDoc(collection(firestore, "education"), {
+        text: textInput,
+        imageUrl: imageUrl,
+        timestamp: new Date(),
+      });
+      formMessage.innerText = "Form submitted successfully!";
+      document.getElementById("uploadFormEducation").reset();
+      addContent(textInput, imageUrl, "educationContentContainer");
+    } catch (error) {
+      formMessage.innerText = "Error uploading content. Please try again.";
+      console.error(error);
+    }
+  });
+
+// Crime and Law Submission
+document
+  .getElementById("uploadFormCrimeLaw")
+  .addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const textInputElement = document.getElementById("textInputCrimeLaw");
+    const imageUploadElement = document.getElementById("imageUploadCrimeLaw");
+    const formMessage = document.getElementById("formMessageCrimeLaw");
+
+    const textInput = textInputElement.value;
+    const imageUpload = imageUploadElement.files[0];
+
+    if (textInput.split(/\s+/).length > 3000) {
+      // Adjust word limit here
+      formMessage.innerText = "Your text exceeds the 3000-word limit.";
+      return;
+    }
+
+    try {
+      const imageRef = ref(
+        storage,
+        `images/${Date.now()}_${imageUpload.name}`
+      );
+      await uploadBytes(imageRef, imageUpload);
+      const imageUrl = await getDownloadURL(imageRef);
+      await addDoc(collection(firestore, "crime_law"), {
+        text: textInput,
+        imageUrl: imageUrl,
+        timestamp: new Date(),
+      });
+      formMessage.innerText = "Form submitted successfully!";
+      document.getElementById("uploadFormCrimeLaw").reset();
+      addContent(textInput, imageUrl, "crimeLawContentContainer");
+    } catch (error) {
+      formMessage.innerText = "Error uploading content. Please try again.";
+      console.error(error);
+    }
+  });
+
+// Social Issues and Movement Submission
+document
+  .getElementById("uploadFormSocialIssues")
+  .addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const textInputElement = document.getElementById("textInputSocialIssues");
+    const imageUploadElement = document.getElementById(
+      "imageUploadSocialIssues"
+    );
+    const formMessage = document.getElementById("formMessageSocialIssues");
+
+    const textInput = textInputElement.value;
+    const imageUpload = imageUploadElement.files[0];
+
+    if (textInput.split(/\s+/).length > 3000) {
+      // Adjust word limit here
+      formMessage.innerText = "Your text exceeds the 3000-word limit.";
+      return;
+    }
+
+    try {
+      const imageRef = ref(
+        storage,
+        `images/${Date.now()}_${imageUpload.name}`
+      );
+      await uploadBytes(imageRef, imageUpload);
+      const imageUrl = await getDownloadURL(imageRef);
+      await addDoc(collection(firestore, "social_issues"), {
+        text: textInput,
+        imageUrl: imageUrl,
+        timestamp: new Date(),
+      });
+      formMessage.innerText = "Form submitted successfully!";
+      document.getElementById("uploadFormSocialIssues").reset();
+      addContent(textInput, imageUrl, "socialIssuesContentContainer");
+    } catch (error) {
+      formMessage.innerText = "Error uploading content. Please try again.";
+      console.error(error);
+    }
+  });
+
+// Future Scope Submission
+document
+  .getElementById("uploadFormFutureScope")
+  .addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const textInputElement = document.getElementById("textInputFutureScope");
+    const imageUploadElement = document.getElementById(
+      "imageUploadFutureScope"
+    );
+    const formMessage = document.getElementById("formMessageFutureScope");
+
+    const textInput = textInputElement.value;
+    const imageUpload = imageUploadElement.files[0];
+
+    if (textInput.split(/\s+/).length > 3000) {
+      // Adjust word limit here
+      formMessage.innerText = "Your text exceeds the 3000-word limit.";
+      return;
+    }
+
+    try {
+      const imageRef = ref(
+        storage,
+        `images/${Date.now()}_${imageUpload.name}`
+      );
+      await uploadBytes(imageRef, imageUpload);
+      const imageUrl = await getDownloadURL(imageRef);
+      await addDoc(collection(firestore, "future_scope"), {
+        text: textInput,
+        imageUrl: imageUrl,
+        timestamp: new Date(),
+      });
+      formMessage.innerText = "Form submitted successfully!";
+      document.getElementById("uploadFormFutureScope").reset();
+      addContent(textInput, imageUrl, "futureScopeContentContainer");
+    } catch (error) {
+      formMessage.innerText = "Error uploading content. Please try again.";
+      console.error(error);
+    }
+  });
